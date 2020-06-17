@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CoVida</string>
+    <string name="btn_main_menu">Conversar com um bot</string>
+    <string name="description_logolegenda">Logo do app, com a frase \'Cada dia é uma vida por si só\'</string>
+    <string name="title_main_menu">Escolha um para começar!</string>
+    <string name="title_bots">Com quem deseja conversar?</string>
+</resources>

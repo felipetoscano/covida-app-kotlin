@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation_fragments"
+    app:startDestination="@id/fragmentSplashScreen">
+
+    <fragment
+        android:id="@+id/fragmentSplashScreen"
+        android:name="br.com.fiap.covida.fragment.FragmentSplashScreen"
+        android:label="FragmentSplashScreen" >
+        <action
+            android:id="@+id/action_fragmentSplashScreen_to_fragmentMainMenu"
+            app:destination="@id/fragmentMainMenu" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentMainMenu"
+        android:name="br.com.fiap.covida.fragment.FragmentMainMenu"
+        android:label="FragmentMainMenu" >
+        <action
+            android:id="@+id/action_fragmentMainMenu_to_fragmentBotsList"
+            app:destination="@id/fragmentBotsList" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentBotsList"
+        android:name="br.com.fiap.covida.fragment.FragmentBots"
+        android:label="FragmentBotsList" >
+        <action
+            android:id="@+id/action_fragmentBotsList_to_fragmentChatbot"
+            app:destination="@id/fragmentChatbot" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentChatbot"
+        android:name="br.com.fiap.covida.fragment.FragmentChat"
+        android:label="FragmentChatbot" >
+        <argument
+            android:name="bot"
+            app:argType="br.com.fiap.covida.model.BotModel" />
+    </fragment>
+
+</navigation>
